@@ -1,13 +1,13 @@
 <?php
 
-namespace MBCore\BaseAdmin;
+namespace Jenson\BaseAdmin;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Schema;
 use Blade;
 
-//use MBCore\BaseAdmin\Console\Commands\Command;
+//use Jenson\BaseAdmin\Console\Commands\Command;
 
 class ServiceProvider extends BaseServiceProvider
 {
@@ -28,7 +28,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'mbcore.baseadmin');
         //发布视图到resources/views/vendor目录
         $this->publishes([
-            __DIR__ . '/resources/views' => resource_path('/views/MBCore/BaseAdmin'),
+            __DIR__ . '/resources/views' => resource_path('/views/Jenson/BaseAdmin'),
         ]);
 
         // 【2】路由
@@ -48,7 +48,7 @@ class ServiceProvider extends BaseServiceProvider
 
         // 【5】资源文件
         $this->publishes([
-            __DIR__.'/resources/assets' => public_path('assets/MBCore/BaseAdmin'),
+            __DIR__.'/resources/assets' => public_path('assets/Jenson/BaseAdmin'),
         ], 'public');
 
         // 【6】注册 Artisan 命令
@@ -62,7 +62,7 @@ class ServiceProvider extends BaseServiceProvider
 
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'MBCore\BaseAdmin\Controllers'], function($router)
+        $router->group(['namespace' => 'Jenson\BaseAdmin\Controllers'], function($router)
         {
             require __DIR__ . '/routes/routes.php';
         });
@@ -74,6 +74,7 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
+        /** @noinspection SpellCheckingInspection */
         config([
             'config/mbcore_baseadmin.php',
         ]);

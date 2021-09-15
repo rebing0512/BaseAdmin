@@ -1,10 +1,10 @@
 <?php
-namespace MBCore\BaseAdmin\Console\Commands;
+namespace Jenson\BaseAdmin\Console\Commands;
 
 use Illuminate\Console\Command as BaseCommand;
 
-use MBCore\BaseAdmin\Models\Admin;
-use MBCore\BaseAdmin\Models\Menu;
+use Jenson\BaseAdmin\Models\Admin;
+use Jenson\BaseAdmin\Models\Menu;
 
 class Command extends BaseCommand
 {
@@ -20,7 +20,7 @@ class Command extends BaseCommand
      *
      * @var string
      */
-    protected $description = 'MBCore BaseAdmin Command description';
+    protected $description = 'Jenson BaseAdmin Command description';
 
     /**
      * Create a new command instance.
@@ -46,7 +46,7 @@ class Command extends BaseCommand
         //如果Window下CMD执行乱码，请输入：CHCP 65001 按Enter键
         $this->echoInfo('-----------------------------');
 
-        $this->echoInfo('******* MBCore BaseAdmin 【开始】 *******');
+        $this->echoInfo('******* Jenson BaseAdmin 【开始】 *******');
         $i = 1;
         $this->echoInfo(($i++).": ".'添加Admin测试数据');
         // 添加Admin测试数据

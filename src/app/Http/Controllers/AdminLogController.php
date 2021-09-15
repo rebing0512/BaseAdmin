@@ -1,11 +1,11 @@
 <?php
 
-namespace MBCore\BaseAdmin\Controllers;
+namespace Jenson\BaseAdmin\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Exceptions\LaravelExcelException;
-use MBCore\BaseAdmin\Models\AdminLog;
+use Jenson\BaseAdmin\Models\AdminLog;
 use Maatwebsite\Excel\Facades\Excel;
 
 class AdminLogController extends BaseController

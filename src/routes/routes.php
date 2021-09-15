@@ -1,6 +1,6 @@
 <?php
-use MBCore\BaseAdmin\Middleware\BaseAdminMiddleware;
-use MBCore\BaseAdmin\Middleware\BaseAdminMenuMiddleware;
+use Jenson\BaseAdmin\Middleware\BaseAdminMiddleware;
+use Jenson\BaseAdmin\Middleware\BaseAdminMenuMiddleware;
 
 Route::get('baseadmin/test', function () {
     return 'baseadmin.test welcome';

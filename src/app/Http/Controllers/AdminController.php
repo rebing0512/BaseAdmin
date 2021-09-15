@@ -1,13 +1,13 @@
 <?php
 
-namespace MBCore\BaseAdmin\Controllers;
+namespace Jenson\BaseAdmin\Controllers;
 
 use Illuminate\Http\Request;
 
-use MBCore\BaseAdmin\Models\Menu;
-use MBCore\BaseAdmin\Models\Admin;
+use Jenson\BaseAdmin\Models\Menu;
+use Jenson\BaseAdmin\Models\Admin;
 
-use MBCore\BaseAdmin\Libraries\Helper;
+use Jenson\BaseAdmin\Libraries\Helper;
 
 class AdminController extends BaseController
 {

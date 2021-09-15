@@ -1,10 +1,10 @@
 <?php
-namespace MBCore\BaseAdmin\Controllers;
+namespace Jenson\BaseAdmin\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use MBCore\BaseAdmin\Models\Menu;
+use Jenson\BaseAdmin\Models\Menu;
 use Carbon\Carbon;
 
 Class MenuController extends BaseController

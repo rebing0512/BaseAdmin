@@ -1,4 +1,4 @@
-@inject('BaseAdminHelper', 'MBCore\BaseAdmin\Libraries\Helper')
+@inject('BaseAdminHelper', 'Jenson\BaseAdmin\Libraries\Helper')
 @extends('mbcore.baseadmin::layout.iframe')
 @section('title', '管理员列表')
 

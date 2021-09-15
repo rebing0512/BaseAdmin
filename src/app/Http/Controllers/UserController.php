@@ -1,12 +1,12 @@
 <?php
-namespace MBCore\BaseAdmin\Controllers;
+namespace Jenson\BaseAdmin\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use MBCore\BaseUser\Models\User;
+use Jenson\BaseUser\Models\User;
 use Carbon\Carbon;
-use MBCore\MCore\Libraries\Helper as MCHelper;
+use Jenson\BaseCore\Libraries\Helper as MCHelper;
 
 Class UserController extends BaseController
 {

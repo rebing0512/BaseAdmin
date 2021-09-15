@@ -1,6 +1,6 @@
 <?php
 
-namespace MBCore\BaseAdmin\Models;
+namespace Jenson\BaseAdmin\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

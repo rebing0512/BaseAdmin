@@ -1,19 +1,18 @@
 {
-  "name": "mbcore/baseadmin",
-  "description": "is MBCore Base Admin Packages",
+  "name": "jenson/baseadmin",
+  "description": "Jenson Base Admin Packages",
   "type": "project",
   "license": "MIT",
   "authors": [
     {
-      "name": "MBCore Jiefan",
-      "email": "i@mbcore.com"
+      "name": "Jenson.Wang"
     }
   ],
   "minimum-stability": "dev",
   "require": {},
   "autoload": {
     "psr-4": {
-      "MBCore\\BaseAdmin\\": "src/"
+      "Jenson\\BaseAdmin\\": "src/"
     }
   },
   "extra": {

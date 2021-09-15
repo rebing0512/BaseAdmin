@@ -1,10 +1,10 @@
 <?php
-namespace MBCore\BaseAdmin\Controllers;
+namespace Jenson\BaseAdmin\Controllers;
 
 use Illuminate\Http\Request;
 
-use MBCore\BaseAdmin\Libraries\Helper;
-use MBCore\BaseAdmin\Models\Admin;
+use Jenson\BaseAdmin\Libraries\Helper;
+use Jenson\BaseAdmin\Models\Admin;
 use Carbon\Carbon;
 
 Class LoginController extends BaseController

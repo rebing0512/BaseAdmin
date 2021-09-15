@@ -1,6 +1,6 @@
 <?php
 
-namespace MBCore\BaseAdmin\Models;
+namespace Jenson\BaseAdmin\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;

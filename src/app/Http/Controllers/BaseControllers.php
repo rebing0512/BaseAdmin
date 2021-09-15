@@ -1,14 +1,14 @@
 <?php
-namespace MBCore\BaseAdmin\Controllers;
+namespace Jenson\BaseAdmin\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use MBCore\BaseAdmin\Models\Admin;
-use MBCore\BaseAdmin\Models\Menu;
+use Jenson\BaseAdmin\Models\Admin;
+use Jenson\BaseAdmin\Models\Menu;
 
-use MBCore\BaseAdmin\Libraries\Helper;
-use MBCore\MCore\Libraries\Helper as CoreHelper;
+use Jenson\BaseAdmin\Libraries\Helper;
+use Jenson\BaseCore\Libraries\Helper as CoreHelper;
 
 class BaseController extends Controller
 {
