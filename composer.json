@@ -1,0 +1,26 @@
+{
+  "name": "mbcore/baseadmin",
+  "description": "is MBCore Base Admin Packages",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MBCore Jiefan",
+      "email": "i@mbcore.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "MBCore\\BaseAdmin\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MBCore\\BaseAdmin\\ServiceProvider"
+      ]
+    }
+  }
+}
