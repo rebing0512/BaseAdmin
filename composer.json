@@ -18,7 +18,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "MBCore\\BaseAdmin\\ServiceProvider"
+        "Jenson\\BaseAdmin\\ServiceProvider"
       ]
     }
   }
