@@ -1,5 +1,5 @@
 <?php
-namespace MBCore\BaseAdmin\Libraries;
+namespace Jenson\BaseAdmin\Libraries;
 
 use Illuminate\Http\Request;
 use MBCore\BaseAdmin\Models\Admin;
