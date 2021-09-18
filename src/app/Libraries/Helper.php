@@ -2,9 +2,9 @@
 namespace Jenson\BaseAdmin\Libraries;
 
 use Illuminate\Http\Request;
-use MBCore\BaseAdmin\Models\Admin;
-use MBCore\BaseAdmin\Models\AdminLog;
-use MBCore\BaseAdmin\Models\Menu;
+use Jenson\BaseAdmin\Models\Admin;
+use Jenson\BaseAdmin\Models\AdminLog;
+use Jenson\BaseAdmin\Models\Menu;
 
 class Helper
 {
