@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Schema;
 use Blade;
-
 //use Jenson\BaseAdmin\Console\Commands\Command;
 
 class ServiceProvider extends BaseServiceProvider

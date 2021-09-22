@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 
 use Jenson\BaseAdmin\Models\Menu;
 use Jenson\BaseAdmin\Models\Admin;
-
 use Jenson\BaseAdmin\Libraries\Helper;
 
-class AdminController extends BaseController
+class AdminController extends JensonBaseAdminController
 {
     //demo
     public function rolestest(Request $request){

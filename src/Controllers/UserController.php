@@ -3,12 +3,11 @@ namespace Jenson\BaseAdmin\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 use Jenson\BaseUser\Models\User;
 use Carbon\Carbon;
-use Jenson\BaseCore\Libraries\Helper as MCHelper;
+use Jenson\BaseCore\Libraries\Helper as CoreHelper;
 
-Class UserController extends BaseController
+Class UserController extends JensonBaseAdminController
 {
     /**
      * @param Request $request
@@ -68,7 +67,7 @@ Class UserController extends BaseController
         if($request->isMethod('post')){
             $phone = $request->get('phone');
             if(!empty($phone)){
-                $vp = MCHelper::telephoneNumber($phone,true);
+                $vp = CoreHelper::telephoneNumber($phone,true);
                 if($vp['code'] == 0){
 
                     return redirect()->back()->withErrors($vp['msg'])->withInput($request->all());
@@ -148,7 +147,7 @@ Class UserController extends BaseController
         if($request->isMethod('post')){
             $phone = $request->get('phone');
             if(!empty($phone)){
-                $vp = MCHelper::telephoneNumber($phone,true);
+                $vp = CoreHelper::telephoneNumber($phone,true);
                 if($vp['code'] == 0){
                     return redirect()->back()->withErrors($vp['msg'])->withInput();
                 }

@@ -3,11 +3,10 @@ namespace Jenson\BaseAdmin\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 use Jenson\BaseAdmin\Models\Menu;
 use Carbon\Carbon;
 
-Class MenuController extends BaseController
+Class MenuController extends JensonBaseAdminController
 {
     public function add(Request $request)
     {

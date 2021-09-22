@@ -8,7 +8,7 @@ use Maatwebsite\Excel\Exceptions\LaravelExcelException;
 use Jenson\BaseAdmin\Models\AdminLog;
 use Maatwebsite\Excel\Facades\Excel;
 
-class AdminLogController extends BaseController
+class AdminLogController extends JensonBaseAdminController
 {
     public function list(Request $request){
         if($request->isMethod('post')){

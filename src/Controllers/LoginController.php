@@ -7,7 +7,7 @@ use Jenson\BaseAdmin\Libraries\Helper;
 use Jenson\BaseAdmin\Models\Admin;
 use Carbon\Carbon;
 
-Class LoginController extends BaseController
+Class LoginController extends JensonBaseAdminController
 {
     public function login(Request $request)
     {
