@@ -8,12 +8,10 @@ use Jenson\BaseAdmin\Models\Admin;
 use Jenson\BaseAdmin\Models\Menu;
 
 use Jenson\BaseAdmin\Libraries\Helper;
-use Jenson\BaseCore\Libraries\Helper as CoreHelper;
+use Jenson\Core\Libraries\Helper as CoreHelper;
 
-class BaseController extends Controller
+class JensonBaseAdminController extends Controller
 {
-
-
     public function __construct(Request $request)
     {
         parent::__construct($request);
