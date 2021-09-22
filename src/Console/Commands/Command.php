@@ -13,7 +13,7 @@ class Command extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'mbcore:baseadmin';
+    protected $signature = 'jenson:baseadmin';
 
     /**
      * The console command description.
