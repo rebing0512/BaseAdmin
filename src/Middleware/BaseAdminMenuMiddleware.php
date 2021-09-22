@@ -1,6 +1,6 @@
 <?php
 
-namespace MBCore\BaseAdmin\Middleware;
+namespace Jenson\BaseAdmin\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
