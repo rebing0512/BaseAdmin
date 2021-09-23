@@ -14,8 +14,8 @@
                             <p class="m-t-md">{{config('mbcore_baseadmin.baseadmin_login_second_title')}}</p>
                         @endif
                     @else
-                        <h4 class="no-margins">登录：</h4>
-                        <p class="m-t-md">登录到{{config('mbcore_baseadmin.baseadmin_name')}}</p>
+                        <h4 class="no-margins" style="text-align: center;">登录</h4>
+                        <p class="m-t-md" style="text-align: center;">欢迎使用{{config('mbcore_baseadmin.baseadmin_name')}}</p>
                     @endif
                     <input type="text" class="form-control uname" placeholder="用户名" name="username"  />
                     <input type="password" class="form-control pword m-b" placeholder="密码" name="password"  />
