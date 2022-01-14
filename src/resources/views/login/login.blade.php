@@ -31,6 +31,12 @@
                     @endif
 
                     <button class="btn btn-success btn-block">登录</button>
+                    @if( config('mbcore_baseadmin.baseadmin_admin_user_login'))
+                    <p class="text-muted text-center" style="margin-top: 10px;">
+{{--                        <a href="{{route('user.personal.forgotPassword')}}" class="forgot-password"><small>忘记密码了？</small></a> |--}}
+                        <a href="{{ route('admin.register.index')}}">注册</a>
+                    </p>
+                    @endif
                     {{ csrf_field() }}
                 </form>
             </div>

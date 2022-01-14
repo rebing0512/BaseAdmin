@@ -32,4 +32,6 @@ return [
     'baseadmin_login_second_title' => '',  //登录副标题，'' 不显示，,否则自定义
     'baseadmin_login_footer' => '&copy; Jenson.COM',  //是否显示登录页底部文字，'' 不显示，默认 &copy; MBCore.COM,否则自定义
     'baseadmin_admin_pending_task' => false,// 是否显示任务提醒，true显示，false 不显示，默认 false
+    'baseadmin_admin_user_login'=>false,//用户是否可以注册
+    'baseadmin_admin_menu_role'=>false,//后台菜单权限
 ];

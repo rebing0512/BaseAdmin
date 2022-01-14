@@ -23,7 +23,17 @@ Route::group([
 });
 
 
-
+// Register
+Route::group([
+    'prefix' =>'register',
+    'middleware'=>'web'
+],function(){
+    Route::get('index','RegisterController@index')->name('admin.register.index');
+    // 注册验证
+    Route::post('auth','RegisterController@auth')->name("admin.register.auth");
+    // 验证码获取
+    Route::post('getCode','RegisterController@getCode')->name("admin.register.getCode");
+});
 
 // Admin 路由
 Route::group([
