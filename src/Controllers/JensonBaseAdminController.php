@@ -61,7 +61,7 @@ class JensonBaseAdminController extends Controller
 
     public function setRolesArr(Request $request){
         //权限渲染菜单输出数据【每次刷新页面进行校验】
-        $rolesData = Admin::find($request->session()->get("uid"))->toArray();
+        $rolesData = Admin::query()->find($request->session()->get("uid"));
         $rolesJson = $rolesData["roles"];
         if($rolesJson != "is_super_user"){
             $rolesArr = json_decode($rolesJson,true);
