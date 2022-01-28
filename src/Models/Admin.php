@@ -2,12 +2,16 @@
 
 namespace Jenson\BaseAdmin\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Admin extends Authenticatable
 {
     use Notifiable;
+
+    use SoftDeletes;
+
     protected $table = 'mbadmin_admins';
     /**
      * The attributes that are mass assignable.
